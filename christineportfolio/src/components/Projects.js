@@ -35,7 +35,7 @@ export const Projects = () => {
         {
             title: "Transparent",
             description: "Social Media Application for government interested individuals where they can post and interact with other posts, create/edit profile, find government events in the area, and contact their local representatives.",
-            imgUrl: transparentApp,
+            /* imgUrl: transparentApp, */
             projectLink: "https://www.youtube.com/watch?v=rvdPtYV4aAw",
         },
         {
