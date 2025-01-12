@@ -421,10 +421,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
-  aspect-ratio: 16 / 9;
-  max-width: 200px;
-
+  width: 2in;
+  height: 3in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.proj-imgbx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -434,11 +444,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 0;
   transition: 0.4s ease-in-out;
 }
-.proj-imgbx img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  /* This ensures the image covers the area without stretching */
-}
+
 
 .proj-imgbx:hover::before {
   height: 100%;

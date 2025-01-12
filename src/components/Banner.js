@@ -48,7 +48,7 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>{`Hi, I'm Christine: `}<span className="wrap">{text}</span></h1>
-            <p>I'm a first year college student at Harvard University concentrating in Computer Science and Statistics on the Data Science track. I'm passionate about entrepreneurship in the GovTech and LifeSciences space, Artificial intelligence, and data-informed consulting. I'm also passionate about STEM advocacy for underrepresented groups such as LGBTQ+ and women, diplomacy, and creating useful and useless apps for fun! Other times you'll find me baking, playing tennis, or exploring new areas.</p>
+            <p>I'm a first year college student at Harvard University concentrating in Computer Science and Statistics on the Data Science track. I'm passionate about entrepreneurship in the GovTech and LifeSciences space, Artificial intelligence, and data-informed consulting. I'm also passionate about STEM advocacy for underrepresented groups such as LGBTQ+ and women, diplomacy, and creating useful and useless apps for fun! Other times you'll find me baking, playing tennis, or exploring new areas. In fact, I love coding so much I made this website!</p>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Header Img" />

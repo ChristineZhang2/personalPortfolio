@@ -10,7 +10,7 @@ import duck from "../assets/img/duck.png";
 import inheritance from "../assets/img/inheritance.png";
 import birthdays from "../assets/img/birthdays.png";
 import dna from "../assets/img/dna.png";
-import transparentApp from "../assets/img/transparentApp.png"
+import transparent from "../assets/img/transparent.png"
 import plurality from "../assets/img/plurality.png"
 import finance from "../assets/img/finance.png"
 import filter from "../assets/img/filter.png"
@@ -21,6 +21,7 @@ import rotunda from "../assets/img/rotunda.png"
 import trivia from "../assets/img/trivia.png"
 import blockchain from "../assets/img/blockchain.png"
 import plan from "../assets/img/planc.png"
+import portfolio from "../assets/img/portfolio.png"
 
 
 
@@ -32,15 +33,21 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
 
     const projects = [
+      {
+        title: "This Portfolio Website!",
+        description: "Full Stack Portfolio Website Using HTML, CSS, JavaScript, and Bootstrap",
+        imgUrl: portfolio, 
+        projectLink: "https://github.com/ChristineZhang2/personalPortfolio",
+    },
         {
             title: "Transparent",
-            description: "Social Media Application for government interested individuals where they can post and interact with other posts, create/edit profile, find government events in the area, and contact their local representatives.",
-            imgUrl: transparentApp, 
+            description: "Political Social Media Application using Swift, Ruby, and Firebase",
+            imgUrl: transparent, 
             projectLink: "https://www.youtube.com/watch?v=rvdPtYV4aAw",
         },
         {
             title: "Rotunda",
-            description: "Web application that allows users to post and interact with content, API to search for all of their representatives from local to national, answer questions to test for a civic engagement score, and access useful resources. Uses HTML, CSS, Flask, Bootstrap, and the Google Civic API",
+            description: "Allows users to interact, search for their representatives, take a civic engagement test, & access useful resources. Uses HTML, CSS, Flask, Bootstrap, & the Google Civic API",
             imgUrl: rotunda,
             projectLink: "https://github.com/ChristineZhang2/rotunda",
         },
@@ -149,9 +156,9 @@ export const Projects = () => {
         },
     ]
 
-    const projectsTab1 = projects.slice(0,6);
-    const projectsTab2 = projects.slice(6, 11);
-    const projectsTab3 = projects.slice(11, 18);
+    const projectsTab1 = projects.slice(0,7);
+    const projectsTab2 = projects.slice(7, 12);
+    const projectsTab3 = projects.slice(12, 19);
 
     return (
         <section className="project" id="projects">

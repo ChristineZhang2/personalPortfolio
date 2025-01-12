@@ -48,7 +48,7 @@ export const Skills = () => {
                                 </div>
                                 <div className="item">
                                     <img src={meter3} alt="Web development skill level"/>
-                                    <h5>HTML, CSS, Javascript (nodeJs, reactJs)</h5>
+                                    <h5>Full Stack, HTML, CSS, Javascript (nodeJs, reactJs)</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter2} alt="Swift and Ruby skill level"/>
