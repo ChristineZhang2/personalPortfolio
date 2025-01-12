@@ -1,14 +1,16 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg"
+/* comment */
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Programmer", "Entrepreneur", "Data-Scientist"];
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
+
+  const toRotate = useMemo(() => ["Programmer", "Entrepreneur", "Data-Scientist"], []);
 
   const tick = useCallback(() => {
     let i = loopNum % toRotate.length;
@@ -29,7 +31,7 @@ export const Banner = () => {
       setLoopNum(prevLoopNum => prevLoopNum + 1);
       setDelta(500);
     }
-  }, [loopNum, isDeleting, text, toRotate, period]);
+  }, [isDeleting, loopNum, text, toRotate, period]);
 
   useEffect(() => {
     let ticker = setInterval(() => {

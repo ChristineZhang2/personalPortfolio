@@ -1,3 +1,4 @@
+import React from "react";
 import {Row, Container, Col} from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -5,7 +6,6 @@ import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import colorSharp from "../assets/img/color-sharp.png";
-
 
 export const Skills = () => {
     const responsive = {
@@ -37,33 +37,33 @@ export const Skills = () => {
                                 Technical Skills
                             </h2>
                             <p>The languages, databases, and programs I know are:</p>
-                            <Carousel responsive = {responsive} infinite={true} className = "skill-slider">
+                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="Image"/>
+                                    <img src={meter1} alt="Python skill level"/>
                                     <h5>Python (Django, Flask)</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image"/>
+                                    <img src={meter2} alt="Java skill level"/>
                                     <h5>Java (Jhipster, Spark)</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="Image"/>
+                                    <img src={meter3} alt="Web development skill level"/>
                                     <h5>HTML, CSS, Javascript (nodeJs, reactJs)</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image"/>
+                                    <img src={meter2} alt="Swift and Ruby skill level"/>
                                     <h5>Swift and Ruby</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Image"/>
+                                    <img src={meter1} alt="UI/UX Design skill level"/>
                                     <h5>UI/UX Design</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image"/>
+                                    <img src={meter2} alt="AWS Cybersecurity skill level"/>
                                     <h5>AWS Cybersecurity</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="Image"/>
+                                    <img src={meter3} alt="Database skill level"/>
                                     <h5>Sequel, MongoDB, Firebase</h5>
                                 </div>
                             </Carousel>
@@ -71,7 +71,7 @@ export const Skills = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-left" src={colorSharp} />
+            <img className="background-image-left" src={colorSharp} alt="Background decoration" />
         </section>
     )
 }
