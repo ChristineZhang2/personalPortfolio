@@ -2,25 +2,25 @@ import {Nav, Row, Col, Container, Tab} from "react-bootstrap";
 import {ProjectCard} from "./ProjectCard";
 import React from 'react';
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import email from "../assets/img/email.svg";
-import imageeditor from "../assets/img/imageeditor.svg";
-import chatbot from "../assets/img/chatbot.svg";
-import scrabble from "../assets/img/scrabble.svg";
-import duck from "../assets/img/duck.svg";
-import inheritance from "../assets/img/inheritance.svg";
-import birthdays from "../assets/img/birthdays.svg";
-import dna from "../assets/img/dna.svg";
-import transparentApp from "../assets/img/transparentApp.svg"
-import plurality from "../assets/img/plurality.svg"
-import finance from "../assets/img/finance.svg"
-import filter from "../assets/img/filter.svg"
-import recover from "../assets/img/recover.svg"
-import spellcheck from "../assets/img/spellcheck.svg"
-import readability from "../assets/img/readability.svg"
-import rotunda from "../assets/img/rotunda.svg"
-import trivia from "../assets/img/trivia.svg"
-import blockchain from "../assets/img/blockchain.svg"
-import plan from "../assets/img/plan-c.svg"
+import email from "../assets/img/email.png";
+import imageeditor from "../assets/img/imageeditor.png";
+import chatbot from "../assets/img/chatbot.png";
+import scrabble from "../assets/img/scrabble.png";
+import duck from "../assets/img/duck.png";
+import inheritance from "../assets/img/inheritance.png";
+import birthdays from "../assets/img/birthdays.png";
+import dna from "../assets/img/dna.png";
+import transparentApp from "../assets/img/transparentApp.png"
+import plurality from "../assets/img/plurality.png"
+import finance from "../assets/img/finance.png"
+import filter from "../assets/img/filter.png"
+import recover from "../assets/img/recover.png"
+import spellcheck from "../assets/img/spellcheck.png"
+import readability from "../assets/img/readability.png"
+import rotunda from "../assets/img/rotunda.png"
+import trivia from "../assets/img/trivia.png"
+import blockchain from "../assets/img/blockchain.png"
+import plan from "../assets/img/planc.png"
 
 
 
@@ -35,7 +35,7 @@ export const Projects = () => {
         {
             title: "Transparent",
             description: "Social Media Application for government interested individuals where they can post and interact with other posts, create/edit profile, find government events in the area, and contact their local representatives.",
-            /* imgUrl: transparentApp, */
+            imgUrl: transparentApp, 
             projectLink: "https://www.youtube.com/watch?v=rvdPtYV4aAw",
         },
         {
