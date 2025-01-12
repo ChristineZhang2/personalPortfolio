@@ -48,7 +48,7 @@ export const NavBar = () => {
               <a href="https://www.instagram.com/christinezhanggg/"><img src={navIcon3} alt="Instagram" /></a>
             </div>
             <a href="mailto:christinezcollege@gmail.com" className="vvd" style={{ textDecoration: 'none' }}>
-              <span>Let's Connect</span>
+              <span>Let's Connect!</span>
             </a>
           </span>
         </Navbar.Collapse>
