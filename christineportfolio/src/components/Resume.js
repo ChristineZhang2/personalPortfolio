@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import resume from '../assets/img/resume.png'; // Add your resume image
+import resume from '../assets/img/resume.png';
 
 export const Resume = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isResumeHovered, setIsResumeHovered] = useState(false);
 
   const handleClick = () => {
     window.open('https://drive.google.com/file/d/18ERIRaENu9lj4aYpftYmSsB_r0kcQClR/view?usp=sharing', '_blank');
@@ -16,12 +16,13 @@ export const Resume = () => {
           <Col>
             <h2>My Resume</h2>
             <div 
-              className={`resume-box ${isHovered ? 'hovered' : ''}`}
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
+              className={`resume-box ${isResumeHovered ? 'hovered' : ''}`}
+              onMouseEnter={() => setIsResumeHovered(true)}
+              onMouseLeave={() => setIsResumeHovered(false)}
               onClick={handleClick}
+              aria-label="Click to view full resume"
             >
-              <img src={resume} alt="Resume Preview" className="resume-image" />
+              <img src={resume} alt="Christine Zhang's Resume Preview" className="resume-image" />
               <div className="resume-overlay">
                 <h3>Click to view full resume</h3>
               </div>

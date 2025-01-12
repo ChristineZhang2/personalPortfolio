@@ -1,5 +1,6 @@
 import {Nav, Row, Col, Container, Tab} from "react-bootstrap";
 import {ProjectCard} from "./ProjectCard";
+import React from 'react';
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import email from "../assets/img/email.svg";
 import imageeditor from "../assets/img/imageeditor.svg";
@@ -178,21 +179,21 @@ export const Projects = () => {
                       <Tab.Pane eventKey="first">
     <Row>
       {projectsTab1.map((project, index) => (
-        <ProjectCard key={index} {...project} />
+        <ProjectCard key={`tab1-${index}`} {...project} />
       ))}
     </Row>
   </Tab.Pane>
   <Tab.Pane eventKey="second">
     <Row>
       {projectsTab2.map((project, index) => (
-        <ProjectCard key={index} {...project} />
+        <ProjectCard key={`tab2-${index}`} {...project} />
       ))}
     </Row>
   </Tab.Pane>
   <Tab.Pane eventKey="third">
     <Row>
       {projectsTab3.map((project, index) => (
-        <ProjectCard key={index} {...project} />
+        <ProjectCard key={`tab3-${index}`} {...project} />
       ))}
     </Row>
   </Tab.Pane>
@@ -204,7 +205,7 @@ export const Projects = () => {
               </Col>
             </Row>
           </Container>
-          <img className="background-image-right" src={colorSharp2}></img>
+          <img className="background-image-right" alt = "background" src={colorSharp2}></img>
         </section>
       )
     }
